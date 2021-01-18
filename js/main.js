@@ -755,9 +755,7 @@ let SEPARATION = 70, AMOUNTX = 50, AMOUNTY = 50;
 				particles = new Array();
 				let PI2 = Math.PI * 2;
 				let material = new THREE.SpriteCanvasMaterial( {
-					//color: 0x3f6e86,
          color: '#565656',
-          // color: 0xffffff,
 					program: function ( context ) {
 						context.beginPath();
 						context.arc( 0, 0, .3, 0, PI2, true );
