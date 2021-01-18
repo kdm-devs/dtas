@@ -4532,6 +4532,19 @@ svg .mech-blue {
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 0 -250px */
+  position: relative;
+  overflow: hidden;
+}
+
+.work-with-us > div {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.work-with-us > div > canvas {
+  height: 100% !important;
 }
 
 .join__to-us {
