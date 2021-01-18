@@ -370,6 +370,7 @@ body {
 
 .uppercase-career {
   width: 90%;
+  font-weight: 700;
 }
 
 .title-start {
@@ -4783,7 +4784,7 @@ svg .mech-blue {
   margin-top: 40px
 }
 .bg-globus {
-  background-image: url('../img/bg/globus.png');
+  background-image: url('../img/workWithUs/earth.svg');
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: 100% 40%
@@ -4932,6 +4933,9 @@ svg .mech-blue {
 }
 
 
+
+
+
 /* .beginning__wrap::before {
   position: absolute;
   content: '';
@@ -5000,10 +5004,10 @@ svg .mech-blue {
   margin-right: 55px;
 }
 
-.schools {
+/* .schools {
   margin-top: 60px;
   padding-left: 250px;
-}
+} */
 
 .schools__title {
   margin-top: 80px;
@@ -5062,12 +5066,14 @@ svg .mech-blue {
   font-size: 24px;
 }
 
+
 .java-school {
   padding-top: 120px;
-  padding-left: 250px;
+  /* padding-left: 250px; */
   background-image: url('../img/school/java.png');
   background-repeat: no-repeat;
   background-position: 255px 106px;
+  background-size: 616px 353px;
 }
 
 .java-school__title {
@@ -5078,7 +5084,7 @@ svg .mech-blue {
 
 .java-school__top {
   display: flex;
-  width: 1125px;
+  /* width: 1125px; */
   justify-content: space-between;
   font-size: 24px;
 }
@@ -5089,7 +5095,7 @@ svg .mech-blue {
 }
 
 .java-school__top-interview {
-  width: 320px;
+  width: 340px;
 }
 
 .java-school__top-link {
@@ -5123,7 +5129,7 @@ svg .mech-blue {
 }
 
 .school__description-demands, .school__description-conditions {
-  width: 550px;
+  width: 534px;
 }
 
 .school__description-demands {
@@ -5207,6 +5213,183 @@ svg .mech-blue {
   display: block;
 }
 
+.school__description-submit-span {
+  padding-top: 120px;
+  background-image: url('../img/school/loop.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 24px;
+}
+
+.school__description-submit-span-devops {
+  background-image: url('../img/school/graduate.svg');
+}
+
+.school__description-submit-small {
+  margin: 10px 0 30px;
+  font-size: 24px;
+  color: #E20074;
+}
+
+.school__description-submit-btn {
+  margin: 0 auto;
+  width: 320px;
+  height: 51px;
+  background-color: #e20074;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+
+
+
+
+/* School-2 */
+
+.school__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 104px;
+}
+
+.title-school {
+  font-size: 70px;
+
+}
+
+.school__left {
+  width: 418px;
+  font-size: 36px;
+}
+
+.school__right {
+  width: 490px;
+}
+
+.school__right-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.school__tight-title {
+  font-size: 30px;
+  margin: 42px 0;
+}
+
+.school__left-description {
+  line-height: 1.5;
+}
+
+.main-wave {
+  background-image: url(../img/school/manpink.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin: 0 auto;
+  /* background-size: 99%; */
+}
+
+.school__begin {
+  background-image: url(../img/school/wave.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: center 280px;
+  
+}
+
+
+.schools {
+  margin-top: 60px;
+  /* padding-left: 250px; */
+}
+
+
+.java-school-test {
+  margin-bottom: 100px;
+}
+
+.java-school__top-text-devops {
+  width: 680px;
+}
+
+
+/* I will non stop */
+
+.iwill {
+
+}
+
+.iwill__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.iwill__item {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 123px;
+}
+
+.iwill__item-span {
+  display: block;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.iwill__item-small {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.iwill__item-img {
+  width: 300px;
+  height: 300px;
+  background-image: url('../img/nonstop/german.jpg');
+  background-position: center center;
+  background-size: 300px;
+}
+
+
+.iwill__item:nth-child(2) .iwill__item-img {
+  background-image: url('../img/nonstop/andrey.jpg');
+}
+
+.iwill__item:nth-child(3) .iwill__item-img {
+  background-image: url('../img/nonstop/danil.jpg');
+}
+
+.iwill__item:nth-child(4) .iwill__item-img {
+  background-image: url('../img/nonstop/evgen.jpg');
+}
+
+.iwill__item:nth-child(5) .iwill__item-img {
+  background-image: url('../img/nonstop/yurii.jpg');
+}
+
+.iwill__item:nth-child(6) .iwill__item-img {
+  background-image: url('../img/nonstop/kirill.jpg');
+}
+
+.iwill__item:nth-child(7) .iwill__item-img {
+  background-image: url('../img/nonstop/kseniya.jpg');
+}
+
+.iwill__item:nth-child(8) .iwill__item-img {
+  background-image: url('../img/nonstop/sergey.jpg');
+}
+
+.iwill__item:nth-child(9) .iwill__item-img {
+  background-image: url('../img/nonstop/svetlana.jpg');
+}
+
+
+
+
+
 /* Example - меню вверху для тестового просмотра с gitHub */
 
 .header-bottom__menu-example {
@@ -5228,8 +5411,27 @@ svg .mech-blue {
 }
 
 
-/* Анимация для страницы work-with-us */
+/* Анимация для страницы work-with-us 
 
-#work-animation {
-  /* background-color: #000514; */
-  }
+ #work-animation {
+  background-color: #000514;
+  } */
+
+
+
+
+
+  /* Politic */
+
+.politic {
+  margin-bottom: 140px;
+}
+
+.title-politic {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.politic-text {
+  font-size: 24px;
+}
