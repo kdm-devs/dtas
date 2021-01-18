@@ -11,13 +11,21 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    
+
+    <!-- Для анимации в секции work-with-us -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/Projector.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/CanvasRenderer.js"></script>
+
+
   <!-- <link rel="stylesheet" href="/css/app.css"> -->
   <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-<header> 
+<!-- <header> 
     <div class="header-fixed">
 <div class="header-top">
   <div class="header-top__inner container">
@@ -66,64 +74,157 @@
     </div>
   </div>
 </div>
-<div class="header-bottom">
-  <div class="header-bottom__inner container">
-    <nav class="header-bottom__menu" id="menu">
 
+<div class="header-bottom">
+    <div class="header-bottom__inner container">
+      <nav class="header-bottom__menu" id="menu">
         <ul class="header-bottom__menu-list">
-            <li class="header-bottom__menu-item-ex">
-              <a href="about-us.html" class="header-bottom__menu-link" target="_blank">О нас</a>
-            </li>
-            <li class="header-bottom__menu-item-ex">
-              <a href="vacant.html" class="header-bottom__menu-link" target="_blank">Вакансии</a>
-            </li>
-            <li class="header-bottom__menu-item-ex">
-              <a href="vacant-inner.html" class="header-bottom__menu-link" target="_blank">Вакансия</a>
-            </li>
-          </ul>
-      <!-- <ul class="header-bottom__menu-list">
-        <li><span class="header-bottom__menu-link">О&nbsp;нас</span>
-          <ul class="header-bottom__menu-submenu">
-            <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#about">О компании</a></li>
-            <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#blog">Блог</a></li>
-            <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#about">#IWILLNOTSTOP</a></li>
-          </ul>
-        </li>
-        <li><span class="header-bottom__menu-link">Наш опыт</span>
-          <ul class="header-bottom__menu-submenu">
-            <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#solutions">Решения</a></li>
-          </ul>
-        </li>
-        <li><span class="header-bottom__menu-link">Карьера</span>
-          <ul class="header-bottom__menu-submenu">
-            <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#career">Вакансии</a></li>
-            <li><a class="header-bottom__menu-submenu-link" href="/work-with-us.html" >Работа у нас</a></li>
-            <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#beginning" >Начало карьеры</a></li>
-          </ul>
-        </li>
-        <li><a class="header-bottom__menu-link" href="/contact.html">Контакты</a></li>
-      </ul> -->
-    </nav>
-    <div class="header-bottom__buttons">
-      <svg class="search-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path class="search-icon--hover" fill-rule="evenodd" clip-rule="evenodd"
-          d="M17.3434 1.875C13.301 1.87383 9.59767 4.13402 7.75047 7.72963C5.90328 11.3253 6.22265 15.6521 8.57776 18.9375C9.26048 19.886 10.1008 20.7105 11.0621 21.375C12.8793 22.7206 15.0822 23.4439 17.3434 23.4375C23.2977 23.4375 28.1246 18.6106 28.1246 12.6562C28.1246 6.70193 23.2977 1.875 17.3434 1.875ZM17.3434 3.28125C22.5211 3.28125 26.7184 7.47858 26.7184 12.6562C26.7184 17.8339 22.5211 22.0312 17.3434 22.0312C15.3857 22.0333 13.4793 21.4055 11.9059 20.2406H11.8497C11.0249 19.67 10.3049 18.9611 9.72154 18.1453C7.65791 15.2881 7.37118 11.5148 8.97937 8.37857C10.5876 5.24231 13.8189 3.27303 17.3434 3.28125ZM2.29653 25.7203L8.14184 19.8797C8.72491 20.6193 9.39899 21.2823 10.1481 21.8531L4.28872 27.7078L4.2184 27.7781C3.65016 28.3088 2.75927 28.2784 2.22856 27.7102C1.69785 27.1419 1.72828 26.251 2.29653 25.7203Z"
-          fill="white" />
-      </svg>
-      <div class="header-bottom__lang">
-        <a href="#" class="header-bottom__lang-item header-bottom__lang-item--active">RU</a>
-        <a href="#" class="header-bottom__lang-item">EN</a>
+          <li><span class="header-bottom__menu-link">О&nbsp;нас</span>
+            <ul class="header-bottom__menu-submenu">
+              <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="about-us.html" target="_blank">О компании</a></li>
+              <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#blog">Блог</a></li>
+              <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#about">#IWILLNOTSTOP</a></li>
+            </ul>
+          </li>
+          <li><span class="header-bottom__menu-link">Наш опыт</span>
+            <ul class="header-bottom__menu-submenu">
+              <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#solutions">Решения</a></li>
+            </ul>
+          </li>
+          <li><span class="header-bottom__menu-link">Карьера</span>
+            <ul class="header-bottom__menu-submenu">
+              <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="vacant.html">Вакансии</a></li>
+              <li><a class="header-bottom__menu-submenu-link" href="/work-with-us.html" >Работа у нас</a></li>
+              <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#beginning" >Начало карьеры</a></li>
+            </ul>
+          </li>
+          <li><a class="header-bottom__menu-link" href="/contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-bottom__buttons">
+        <svg class="search-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="search-icon--hover" fill-rule="evenodd" clip-rule="evenodd"
+            d="M17.3434 1.875C13.301 1.87383 9.59767 4.13402 7.75047 7.72963C5.90328 11.3253 6.22265 15.6521 8.57776 18.9375C9.26048 19.886 10.1008 20.7105 11.0621 21.375C12.8793 22.7206 15.0822 23.4439 17.3434 23.4375C23.2977 23.4375 28.1246 18.6106 28.1246 12.6562C28.1246 6.70193 23.2977 1.875 17.3434 1.875ZM17.3434 3.28125C22.5211 3.28125 26.7184 7.47858 26.7184 12.6562C26.7184 17.8339 22.5211 22.0312 17.3434 22.0312C15.3857 22.0333 13.4793 21.4055 11.9059 20.2406H11.8497C11.0249 19.67 10.3049 18.9611 9.72154 18.1453C7.65791 15.2881 7.37118 11.5148 8.97937 8.37857C10.5876 5.24231 13.8189 3.27303 17.3434 3.28125ZM2.29653 25.7203L8.14184 19.8797C8.72491 20.6193 9.39899 21.2823 10.1481 21.8531L4.28872 27.7078L4.2184 27.7781C3.65016 28.3088 2.75927 28.2784 2.22856 27.7102C1.69785 27.1419 1.72828 26.251 2.29653 25.7203Z"
+            fill="white" />
+        </svg>
+        <div class="header-bottom__lang">
+          <a href="#" class="header-bottom__lang-item header-bottom__lang-item--active">RU</a>
+          <a href="#" class="header-bottom__lang-item">EN</a>
+        </div>
       </div>
     </div>
   </div>
+
+
+
 </div>
+</header> -->
+
+
+<header> 
+
+
+    <div class="header-fixed">
+        <div class="header-top">
+        <div class="header-top__inner container">
+            <a href="/" class="header-top__logo">
+            <svg width="72" height="36" viewBox="0 0 72 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 23.3849H7.14764V16.2373H0V23.3849Z"
+                fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.7959 23.3849H28.9435V16.2373H21.7959V23.3849Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M43.2383 23.3849H50.3859V16.2373H43.2383V23.3849Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M64.6816 23.3849H71.8293V16.2373H64.6816V23.3849Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28.5896 0H0.352923L0 12.4548L1.87277 12.7792C2.2219 9.10959 3.18485 6.38582 4.76256 4.60887C6.42282 2.74938 8.70828 1.7779 11.6474 1.69441V27.75C11.6474 30.025 11.3296 31.5022 10.6655 32.1834C10.101 32.7659 9.14564 33.1226 7.80131 33.2545C7.40285 33.2877 6.72167 33.3047 5.75872 33.3047V35.2971H23.1838V33.3047C22.2209 33.3047 21.5406 33.2877 21.1412 33.2545C19.7969 33.1226 18.8415 32.7659 18.2771 32.1834C17.6129 31.5022 17.2913 30.025 17.2913 27.75V1.69441C20.2305 1.7779 22.5207 2.74938 24.1809 4.60887C25.7586 6.38582 26.7216 9.10959 27.0698 12.7792L28.9435 12.4548L28.5896 0Z"
+                fill="white" />
+            </svg>
+            </a>
+            <a href="/" class="header-top__logo-pink">
+            <svg width="57" height="27" viewBox="0 0 57 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.275917 0H22.3356L22.612 9.46731L21.1482 9.71322C20.8762 6.9238 20.1239 4.85337 18.8913 3.50264C17.5942 2.08918 15.805 1.35144 13.5089 1.28798V21.093C13.5089 22.8224 13.7601 23.9459 14.279 24.4637C14.72 24.9058 15.4663 25.1769 16.5166 25.2779C16.8286 25.3031 17.36 25.3154 18.1123 25.3154V26.8305H4.49914V25.3154C5.25143 25.3154 5.78286 25.3031 6.09489 25.2779C7.14514 25.1769 7.89151 24.9058 8.33251 24.4637C8.85133 23.9459 9.09962 22.8224 9.09962 21.093V1.28798C6.80346 1.35144 5.01796 2.08918 3.72091 3.50264C2.48833 4.85337 1.73603 6.9238 1.46328 9.71322L0.000198947 9.46731L0.275917 0ZM0 17.7751H5.58402V12.3419H0V17.7751ZM17.0278 17.7751H22.6118V12.3419H17.0278V17.7751ZM39.3631 17.7751H33.7799V12.3419H39.3631V17.7751ZM50.5319 17.7751H56.116V12.3419H50.5319V17.7751Z" fill="#E40072"/>
+            </svg>
+            </a>
+            <p class="header-top__text">Deutsche Telekom IT&nbsp;Solutions</p>
+            <div class="header-top__leftmenu-row">
+            <div class="header-bottom__lang">
+                <a href="#" class="header-bottom__lang-item header-bottom__lang-item--active">RU</a>
+                <a href="#" class="header-bottom__lang-item">EN</a>
+            </div>
+            <div class="header-top__leftmenu-column">
+                <button class="header-top__leftmenu-search">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.375 10.025L15.05 13.7C15.3875 14.075 15.3875 14.675 15.0125 15.0125C14.675 15.3875 14.075 15.3875 13.7 15.0125L10.025 11.3375C9.05 12.0875 7.8125 12.5 6.5 12.5C3.2 12.5 0.5 9.8 0.5 6.5C0.5 3.2 3.2375 0.5 6.5375 0.5C9.8375 0.5 12.5375 3.2 12.5375 6.5C12.5375 7.8125 12.0875 9.05 11.375 10.025ZM6.5 1.625C3.8 1.625 1.625 3.8 1.625 6.5C1.625 9.2 3.8 11.375 6.5 11.375C9.2 11.375 11.375 9.2 11.375 6.5C11.375 3.8 9.2 1.625 6.5 1.625Z" fill="#262626"/>
+                </svg>
+                </button>
+                <p class="header-top__leftmenu-description lowTop">Поиск</p>
+            </div>
+            <div class="header-top__leftmenu-column">
+                <a class="header-top__leftmenu openMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+                </a>
+                <p class="header-top__leftmenu-description">Меню</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="header-bottom">
+            <div class="header-bottom__inner container">
+            <nav class="header-bottom__menu" id="menu">
+                <ul class="header-bottom__menu-list">
+                <li><span class="header-bottom__menu-link">О&nbsp;нас</span>
+                    <ul class="header-bottom__menu-submenu">
+                    <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="about-us.html" target="_blank">О компании</a></li>
+                    <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#blog">Блог</a></li>
+                    <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#about">#IWILLNOTSTOP</a></li>
+                    </ul>
+                </li>
+                <li><span class="header-bottom__menu-link">Наш опыт</span>
+                    <ul class="header-bottom__menu-submenu">
+                    <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#solutions">Решения</a></li>
+                    </ul>
+                </li>
+                <li><span class="header-bottom__menu-link">Карьера</span>
+                    <ul class="header-bottom__menu-submenu">
+                    <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="vacant.html">Вакансии</a></li>
+                    <li><a class="header-bottom__menu-submenu-link" href="/work-with-us.html" >Работа у нас</a></li>
+                    <li><a class="header-bottom__menu-submenu-link header-bottom__menu-link--scroll" href="#beginning" >Начало карьеры</a></li>
+                    </ul>
+                </li>
+                <li><a class="header-bottom__menu-link" href="/contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-bottom__buttons">
+                <svg class="search-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="search-icon--hover" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.3434 1.875C13.301 1.87383 9.59767 4.13402 7.75047 7.72963C5.90328 11.3253 6.22265 15.6521 8.57776 18.9375C9.26048 19.886 10.1008 20.7105 11.0621 21.375C12.8793 22.7206 15.0822 23.4439 17.3434 23.4375C23.2977 23.4375 28.1246 18.6106 28.1246 12.6562C28.1246 6.70193 23.2977 1.875 17.3434 1.875ZM17.3434 3.28125C22.5211 3.28125 26.7184 7.47858 26.7184 12.6562C26.7184 17.8339 22.5211 22.0312 17.3434 22.0312C15.3857 22.0333 13.4793 21.4055 11.9059 20.2406H11.8497C11.0249 19.67 10.3049 18.9611 9.72154 18.1453C7.65791 15.2881 7.37118 11.5148 8.97937 8.37857C10.5876 5.24231 13.8189 3.27303 17.3434 3.28125ZM2.29653 25.7203L8.14184 19.8797C8.72491 20.6193 9.39899 21.2823 10.1481 21.8531L4.28872 27.7078L4.2184 27.7781C3.65016 28.3088 2.75927 28.2784 2.22856 27.7102C1.69785 27.1419 1.72828 26.251 2.29653 25.7203Z"
+                    fill="white" />
+                </svg>
+                <div class="header-bottom__lang">
+                <a href="#" class="header-bottom__lang-item header-bottom__lang-item--active">RU</a>
+                <a href="#" class="header-bottom__lang-item">EN</a>
+                </div>
+            </div>
+            </div>
+        </div>
+      
+
+
 </div>
 </header>
 
 <main>
 
-  <section class="work-with-us">
+  <section class="work-with-us" id="work-animation">
     <div class="container">
         <div class="section-wrap">
             <h1 class="title-xl uppercase uppercase-career">Карьера в <span class="purple-symb">Deutsche telekom
@@ -177,7 +278,9 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Мы соблюдаем трудовое законодательство РФ. Два раза в месяц выплачивается оклад, а по итогам года выплачивается бонус.
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -212,7 +315,9 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Каждому сотруднику после испытательного срока оформляется ДМС. В ДМС включено большое количество услуг, в том числе стоматология. Раз в неделю к нам в офис приходит врач-терапевт. После испытательного срока компания оплачивает 100% больничного в течение 15 рабочих дней.
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -234,7 +339,9 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Компания предоставляет релокационный бонус кандидатам, переезжающим в  Воронеж или Санкт-Петербург.
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -254,7 +361,12 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Обучение в компании играет важную роль в построении карьеры, поэтому мы стараемся создать необходимые условия для всестороннего развития наших специалистов.
+Мы предоставляем сотрудникам широкие возможности для повышения квалификации: обучение внутри компании и за ее пределами, развитие soft skills и изучение иностранных языков.
+Сотрудники могут в режиме 24/7 пользоваться онлайн платформой c тысячами курсов, библиотекой и программами подготовки к сертификации на разные темы. Платформа доступна онлайн и регулярно пополняется.
+
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -275,11 +387,16 @@
                                       fill="#E20074" stroke="#E20074" stroke-width="0.2"/>
                                 <rect x="1" y="1" width="25" height="25" stroke="black"/>
                             </svg>
-                        </span> Сильная корпоративная культура
+                        </span> Сильная корпоративная культура и ценности
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Нами движут инновации, и нас вдохновляет командный дух, основанный на обмене идеями: нашу корпоративную культуру характеризует совместная работа над цифровым будущим. Используя лучшие инструменты и технологии, мы создаем уникальные решения для наших клиентов и предлагаем нашим сотрудникам возможности для персонального роста. Наши ожидания высоки, и мы предлагаем шанс формировать будущее вместе с нами. Наши корпоративные принципы описывают, как нам удается претворять наши идеи в жизнь.
+                                <!-- У нас распределенные команды, и наши сотрудники ездят в командировки в Европу, в частности, в Германию, Австрию, Швейцарию, Словакию.
+В командировках мы работаем с европейскими коллегами, обмениваемся знаниями, обсуждаем проделанную работу и новые задачи. -->
+
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -304,7 +421,9 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Мы ведем более 150 проектов в России. Мы работаем с заказчиками из разных сфер, начиная с телекоммуникаций и заканчивая автомобилестроением. Мы создаем полезные продукты для миллионов людей по всему миру.
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -318,7 +437,11 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                У нас распределенные команды, и наши сотрудники ездят в командировки в Европу, в частности, в Германию, Австрию, Швейцарию, Словакию.
+В командировках мы работаем с европейскими коллегами, обмениваемся знаниями, обсуждаем проделанную работу и новые задачи.
+
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -342,7 +465,12 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                В каждом офисе у нас есть кухни, оборудованные всем необходимым, чтобы пообедать в офисе с коллегами. 
+У нас всегда есть кофе и чай.  В дни праздников мы угощаем сотрудников сладостями и фруктами.
+В зонах отдыха у нас есть настольные игры и Xbox, а также столы для настольного тенниса и  кикера.
+
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -357,7 +485,9 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Мы работаем с крупнейшими европейскими заказчиками, но это не мешает нам быть активными в свободное от работы время. Мы занимаемся спортом – играем в волейбол и футбол. У нас есть настольный теннис и кикер, а еще мы участвуем в беговых марафонах и проводим в офисах разминки. Наши сотрудники регулярно ходят вместе по музеям, а на работу могут приезжать на велосипедах. Мы регулярно проводим корпоративные праздники и тематические квесты.
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -373,7 +503,9 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Мы объединяем личную жизнь и работу в нашей корпоративной культуре. В течение года мы проводим большое количество интересных мероприятий. В дни праздников мы устраиваем квесты, поздравления коллег, украшаем офис, угощаем сладостями и фруктами и разыгрываем корпоративные сувениры.
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -387,7 +519,11 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Мы занимаемся спортом – играем в волейбол, бадминтон и футбол. В офисе у нас есть настольный теннис и кикер, а еще мы участвуем в беговых марафонах и проводим разминки в офисах. Наши сотрудники могут приезжать в офис на велосипедах. T-Systems – традиционный участник турнира среди IT-компаний «IT-Первенство». С каждым годом растет количество дисциплин, где заявлены наши коллеги. 
+                                А те, кто любит футбол, принимают участие в Лиге Чемпионов Бизнеса в Петербурге и Воронеже.
+                                
+                            </p>
                         </div>
                     </div>
                     <h6 class="contact__text-city contact__text-city--requisites work-with-us_tab">
@@ -411,7 +547,9 @@
                     </h6>
                     <div class="requisites__wrap">
                         <div class="requisites__inner">
-                            <p class="requisites__text requisites__text--bold"></p>
+                            <p class="requisites__text requisites__text--bold">
+                                Наша компания сотрудничает с различными благотворительными фондами Санкт-Петербурга и Воронежа, помогая подопечным сборами по итогам благотворительных мероприятий и акций. Кроме того, мы участвуем в благотворительном марафонах, собираем вещи для нуждающихся людей и несколько раз в год мы проводим день донора.
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -425,7 +563,7 @@
             <h1 class="title-xl uppercase">Ценим нашу команду</h1>
             <div class="work-with-us_slider">
 
-
+ 
                 <div class="work-with-us_slider-card">
                     <div class="row flex-end">
                         <div class="photo-box">
@@ -1627,6 +1765,9 @@
   integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
   crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+
+
+
 </body>
 
 </html>

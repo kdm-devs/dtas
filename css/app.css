@@ -6,7 +6,14 @@ html {
   -webkit-text-size-adjust: 100%
 }
 body {
-  margin: 0
+  margin: 0;
+
+  /* height: 100%;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow:hidden; */
+
 }
 main {
   display: block;
@@ -365,6 +372,10 @@ body {
   width: 90%;
 }
 
+.title-start {
+  font-size: 70px;
+}
+
 .text-base {
   font-weight: 400;
   font-size: 24px;
@@ -472,7 +483,10 @@ body {
 }
 .header-top {
   background: #e20074;
-  position: relative;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 99;
+  /* padding-top: 20px; */
 }
 .header-top__inner {
   display: -webkit-box;
@@ -523,7 +537,10 @@ body {
 }
 .header-bottom {
   background: #fff;
-  padding: 22px 0;
+  padding: 3px 0;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 99; 
 }
 
 .header-bottom-invisible {
@@ -536,13 +553,58 @@ body {
 
 @media screen and (min-width:992px) {
   .header-bottom.scrolled {
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*top: 0;*/
+    /*z-index: 99;*/
+    /*border-top: 3px solid #e20074*/
+    transform: translateY(45px);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 99;
-    border-top: 3px solid #e20074
+    border-top: 3px solid #e20074;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+  }
+  .scrolled-red{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+  }
+  .scrolled-red>.header-top__inner{
+      height: 50px;
+      background: #e20074;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+  }
+  .scrolled-red>.header-top__inner>.header-top__text{
+    margin-right: 55px;
+  }
+  .scrolled-red>.header-top__inner>.header-top__logo-pink>svg>path{
+    fill: #ffffff;
   }
 }
+
+/* .fixed-header {
+  position: sticky;
+  width: 100%;
+  opacity: 1; 
+  flex-direction: row-reverse;
+} */
+
 .header-bottom__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,14 +640,15 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-left: 110px;
+  /* padding-left: 110px; */
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
   list-style: none;
-  background-image: url('../img/logo-pink.svg');
+  padding-left: 0;
+  /* background-image: url('../img/logo-pink.svg');
   background-repeat: no-repeat;
-  background-position: left 0;
+  background-position: left 0; */
 }
 @media screen and (min-width:992px) {
   .header-bottom__menu-list > li:hover .header-bottom__menu-link {
@@ -1840,7 +1903,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%
+  width: 60%
 }
 .social-left {
   width: 60%
@@ -1877,7 +1940,7 @@ body {
 .social-right {
   content: '';
   margin-left: 30%;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   /* position: absolute; */
   right: 0
 }
@@ -2641,7 +2704,8 @@ svg .mech-blue {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
+  /* display: none; */
 }
 .marquee__text {
   font-weight: 800;
@@ -2655,6 +2719,11 @@ svg .mech-blue {
   /* -moz-animation: marquee 5s linear infinite;
   -webkit-animation: marquee 5s linear infinite; */
   animation: marquee 6s linear infinite;
+}
+
+.title-marquee {
+  font-size: 70px;
+  text-transform: uppercase;
 }
 
 @-webkit-keyframes marquee {
@@ -4457,10 +4526,10 @@ svg .mech-blue {
   }
 }
 .work-with-us {
-  background-image: url(/img/bg/work-with-us.svg);
+  /* background-image: url(/img/bg/work-with-us.svg);
   background-repeat: no-repeat;
   background-size: 90%;
-  background-position: 0 -250px
+  background-position: 0 -250px */
 }
 
 .join__to-us {
@@ -4819,12 +4888,23 @@ svg .mech-blue {
 
 .beginning {
   /* margin: 0 auto; */
-  background-image: url(../img/school/man.png);
+  background-image: url(../img/school/manpink.png);
   background-repeat: no-repeat;
-  background-size: 1470px 500px;
+  background-size: 1440px 500px;
   background-position: center top;
   z-index: 2;
 }
+
+/* .beginning-wave {
+  position: relative;
+  display: flex;
+  background-image: url(../img/school/wave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 260px;
+  justify-content: space-around;
+  z-index: -1;
+} */
 
 .beginning__wrap {
   position: relative;
@@ -4833,8 +4913,9 @@ svg .mech-blue {
   background-repeat: no-repeat;
   /* background-size: cover; */
   background-position: center 260px;
-  /* justify-content: space-around; */
+  justify-content: space-around;
 }
+
 
 /* .beginning__wrap::before {
   position: absolute;
@@ -5130,3 +5211,10 @@ svg .mech-blue {
   visibility: hidden;
   /* transition: 1s; */
 }
+
+
+/* Анимация для страницы work-with-us */
+
+#work-animation {
+  /* background-color: #000514; */
+  }
