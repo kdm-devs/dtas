@@ -486,6 +486,7 @@ body {
   /* position: fixed; */
   width: 100%;
   z-index: 99;
+  height: 70px;
   /* padding-top: 20px; */
 }
 .header-top__inner {
@@ -541,6 +542,7 @@ body {
   /* position: fixed; */
   width: 100%;
   z-index: 99; 
+  height: 50px;
 }
 
 .header-bottom-invisible {
