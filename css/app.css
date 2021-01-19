@@ -5323,23 +5323,55 @@ svg .mech-blue {
 /* I will non stop */
 
 .iwill {
-  position: relative;
+  /* position: relative; */
 }
 
-.iwill::before {
+.iwill {
+  /* position: relative;
+  content: ''; */
+  /* background-image: url('../img/nonstop/IWILLNOTSTOP-1.png'); */
+  background-position: left top;
+  background-repeat: no-repeat;
+  /* width: 948px;
+  height: 122px;
+  top: 30px; */
+}
+
+.container__iwillnotstop-before {
+  position: relative;
+  padding-top: 34px;
+}
+
+/* .container__iwillnotstop-after {
+  position: relative;
+  padding-top: 34px;
+} */
+
+.container__iwillnotstop-before::before {
   position: absolute;
   content: '';
   background-image: url('../img/nonstop/IWILLNOTSTOP-1.png');
-  background-position: left center;
-  background-repeat: no-repeat;
   width: 948px;
   height: 122px;
-  top: 30px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: -30px 0;
 }
+
+/* .container__iwillnotstop-after::after {
+  position: absolute;
+  content: '';
+  background-image: url('../img/nonstop/IWILLNOTSTOP-2.png');
+  width: 948px;
+  height: 122px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: 530px 0;
+} */
 
 .iwill__title {
   max-width: 476px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   font-size: 51px;
   font-weight: 700;
   padding: 16px 20px 11px 38px;
@@ -5357,6 +5389,7 @@ svg .mech-blue {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0;
+  margin-bottom: 100px;
 }
 
 .iwill__item {
@@ -5422,6 +5455,31 @@ svg .mech-blue {
   margin-bottom: 100px;
 }
 
+/* .iwill__choose::before {
+  position: absolute;
+  content: '';
+  background-image: url('../img/nonstop/IWILLNOTSTOP-3.png');
+  background-repeat: no-repeat;
+  width: 1480px;
+  height: 190px;
+  background-position: 252px  0;
+} */
+
+.iwill__choose-container {
+  position: relative;
+}
+
+.iwill__choose-container::before {
+  position: absolute;
+  content: '';
+  width: 1480px;
+  height: 190px;
+  background-image: url('../img/nonstop/IWILLNOTSTOP-3.png');
+  background-repeat: no-repeat;
+  background-position: -24px 0;
+  z-index: -1;
+}
+
 .iwill-wrap {
   display: flex;
 }
@@ -5433,6 +5491,8 @@ svg .mech-blue {
 .iwill__choose-left-title {
   font-size: 40px;
   font-weight: 700;
+  margin-top: 90px;
+  margin-left: 0.5em;
 }
 
 .iwill__choose-left-title span {
@@ -5466,6 +5526,65 @@ svg .mech-blue {
     display: block;
   }
 }
+
+.iwill__main-main {
+  margin-top: 0;
+}
+
+/* I WIll - inner */
+
+.iwill__inner-main {
+  margin-top: 0;
+}
+
+.iwill__inner {
+  max-width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.iwill__inner-1 {
+  background-image: url('../img/nonstop/yurii_inner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.iwill__inner-join {
+  max-width: 1481px;
+  height: 592px;
+}
+
+.iwill__inner-join-left {
+  width: 393px;
+  height: 193px;
+}
+
+.iwill__inner-join-left-title {
+  max-width: 400px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.iwill__inner-join-left-title span {
+  color: #e20074;
+}
+
+.iwill__inner-container {
+  position: relative;
+}
+
+.iwill__inner-container::before {
+  position: absolute;
+  content: '';
+  width: 1480px;
+  height: 190px;
+  background-image: url('../img/nonstop/IWILLNOTSTOP-inner.png');
+  background-repeat: no-repeat;
+
+}
+
 
 /* Example - меню вверху для тестового просмотра с gitHub */
 
