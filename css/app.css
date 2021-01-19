@@ -362,7 +362,8 @@ body {
   font-size: 50px
 }
 .title-xl {
-  font-size: 70px
+  font-size: 70px;
+  font-weight: 800;
 }
 .uppercase {
   text-transform: uppercase
@@ -370,7 +371,7 @@ body {
 
 .uppercase-career {
   width: 90%;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .title-start {
@@ -1890,6 +1891,10 @@ body {
   }
 } */
 
+.social {
+  margin-bottom: 100px;
+}
+
 .social__title {
   width: 700px;
   font-size: 70px;
@@ -2977,7 +2982,8 @@ svg .mech-blue {
   background-image: url(/img/about/quote.svg);
   background-repeat: no-repeat;
   margin-bottom: 28px;
-  max-height: 65px
+  max-height: 65px;
+  margin-left: -10px;
 }
 .rebranding__right-wrap {
   display: -webkit-box;
@@ -3951,7 +3957,7 @@ svg .mech-blue {
 .form__title {
   margin: 0;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 50px;
   line-height: 140%;
   color: #fff;
@@ -4410,7 +4416,7 @@ svg .mech-blue {
 }
 .vacancy__variants .title-lg {
   margin-bottom: 50px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: unset
 }
 @media screen and (max-width:769px) {
@@ -5317,7 +5323,32 @@ svg .mech-blue {
 /* I will non stop */
 
 .iwill {
+  position: relative;
+}
 
+.iwill::before {
+  position: absolute;
+  content: '';
+  background-image: url('../img/nonstop/IWILLNOTSTOP-1.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  width: 948px;
+  height: 122px;
+  top: 30px;
+}
+
+.iwill__title {
+  max-width: 476px;
+  margin-top: 100px;
+  font-size: 51px;
+  font-weight: 700;
+  padding: 16px 20px 11px 38px;
+  background-color: #e20074;
+}
+
+.iwill__text {
+  max-width: 904px;
+  font-size: 24px;
 }
 
 .iwill__list {
@@ -5325,6 +5356,7 @@ svg .mech-blue {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 0;
 }
 
 .iwill__item {
@@ -5386,9 +5418,54 @@ svg .mech-blue {
   background-image: url('../img/nonstop/svetlana.jpg');
 }
 
+.iwill__choose {
+  margin-bottom: 100px;
+}
+
+.iwill-wrap {
+  display: flex;
+}
+
+.iwill__choose-left {
+  max-width: 438px;
+}
+
+.iwill__choose-left-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.iwill__choose-left-title span {
+  color: #e20074;
+}
 
 
+.iwill__choose-left-btn {
+  width: 320px;
+  height: 50px;
+  background-color: #e20074;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.iwill__choose-right-small {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.iwill__choose-right-small span {
+  color: #e20074;
+}
+
+@media screen and (max-width:1240px) {
+  .iwill-wrap {
+    display: block;
+  }
+}
 
 /* Example - меню вверху для тестового просмотра с gitHub */
 
@@ -5434,4 +5511,4 @@ svg .mech-blue {
 
 .politic-text {
   font-size: 24px;
-}
+} 
