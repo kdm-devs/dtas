@@ -11,15 +11,22 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" /> -->
     
+
+    <!-- Для анимации в секции work-with-us -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/Projector.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/CanvasRenderer.js"></script>
+
+
+  <!-- <link rel="stylesheet" href="/css/app.css"> -->
   <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
 
-
 <header> 
-
 
     <div class="header-fixed">
         <div class="header-top">
@@ -70,6 +77,8 @@
         </div>
         </div>
 
+
+
         <div class="header-bottom">
             <div class="header-bottom__inner container">
             <nav class="header-bottom__menu" id="menu">
@@ -110,119 +119,159 @@
             </div>
             </div>
         </div>
-    </div>
+      
+
+
+</div>
 </header>
 
-<main>
-    <div class="container">
-        <div class="section-wrap politic">
-            <!-- <h2 class="title title-politic">Политика в отношении обработки персональных данных</h2> -->
-            <h2 class="title title-politic">Отказ от ответственности</h2>
-            <p class="politic-text">
-                
-              Deutsche Telekom IT Solutions не гарантирует, что
-              информация, представленная на этом веб-сайте,
-              является полной, точной и всегда актуальной. Это
-              относится также ко всем ссылкам, цитируемым
-              на этом сайте, прямо или косвенно. Deutsche
-              Telekom IT Solutions не несет ответственности за
-              содержимое страниц, на которые можно попасть,
-              нажав на любую ссылку.
-              Deutsche Telekom IT Solutions оставляет за собой
-              право изменять или дополнять информацию,
-              представленную на сайте, без предварительного
-              уведомления.
-              Информация на этом веб-сайте не является
-              предложением о продаже или офертой о покупке
-              каких-либо ценных бумаг, и на нее не следует
-              полагаться в связи с любым инвестиционным или
-              иным решением.
-              Deutsche Telekom IT Solutions не несет никакой
-              ответственности за фактические, прямые или
-              косвенные убытки или убытки, возникшие из-за
-              недоступности сайта, потери данных или
-              упущенной выгоды в связи с использованием
-              документов или информации, доступной через
-              этот веб-сайт.
-              За исключением исторической информации,
-              вопросы, обсуждаемые в материалах и
-              документах на этом веб-сайте, являются
-              «прогнозными заявлениями». Эти прогнозные
-              заявления основаны на ряде рисков,
-              неопределенностей или других факторов, многие
-              из которых находятся вне контроля Deutsche
-              Telekom IT Solutions, что может привести к тому,
-              что фактические результаты будут существенно
-              отличаться от таких заявлений.
-              Посетителям этого веб-сайта не следует
-              чрезмерно полагаться на эти прогнозные
-              заявления.
-              Deutsche Telekom IT Solutions отказывается от
-              каких-либо намерений или обязательств по
-              обновлению или пересмотру любых прогнозных
-              заявлений, будь то в результате получения новой
-              информации, будущих событий или иным
-              образом.
-                
-            </p>
-        </div>    
-    </div>    
+<main class="decisions-main">
+
+    <section class="decisions-main-section">
+        <div class="container decisions-main-container">
+            <!-- <div class="section-wrap"> -->
+              <div class="decisions-main-top">
+                  <h1 class="title-xl uppercase decisions-main-title">Наш опыт</h1>
+                  <p class="decisions-main-text">Мы эксперты в широком стеке IT-технологий</p>
+                  <p class="decisiona-main-description">Работаем с продуктами Java, .Net, C++, SAP, Oracle, Netcracker, Python, Big Data, SAP HANA, Salesforce и другими.</p>
+              </div>
+            <!-- </div> -->
+        </div>
+          <div class="section-wrap">
+            <ul class="decisions-main-list">
+              <li class="decisions-main-item">
+                <h4 class="decisions-main-list-title">Начиная с 1995 года</h4>
+                <p class="decisions-main-list-text">
+                  успешно реализуем проекты для компаний из различных отраслей. Разрабатываем решения для лидеров рынка телекоммуникаций, автомобилестроения, логистики и транспорта, здравоохранения, банков и других.
+                </p>
+              </li>
+              <li class="decisions-main-item">
+                <h4 class="decisions-main-list-title">Мы создаем будущее здесь и сейчас</h4>
+                <p class="decisions-main-list-text">
+                  разрабатывая инновационные IТ-решения в условиях быстро меняющихся трендов, реализуем все больше и больше проектов по Agile-методологии. Постоянно расширяем существующий стек информационных технологий за счет новейших направлений. 
+                </p>
+              </li>
+            </ul>
+          </div> 
+          <div class="section-wrap">
+            <ul class="decisions-how-list">
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Аэропорты и города. Как разработки наших коллег помогают авиации</p>
+              </li>
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Xride: домой на блокчейне</p>
+              </li>
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Cloud Billing
+                  расширяет границы</p>
+              </li>
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Аэропорты и города. Как разработки наших коллег помогают авиации</p>
+              </li>
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Xride: домой на блокчейне</p>
+              </li>
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Cloud Billing
+                  расширяет границы</p>
+              </li>
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Аэропорты и города. Как разработки наших коллег помогают авиации</p>
+              </li>
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Xride: домой на блокчейне</p>
+              </li>
+              <li class="decisions-how-item">
+                <p class="decisions-how-item-text">Cloud Billing
+                  расширяет границы</p>
+              </li>
+            </ul>
+          </div> 
+          <div class="section-wrap">
+            <ul class="decisions-link-list">
+              <li class="decisions-link-item decisions-link-item-img">
+                <img src="img/decisions/vector-back.svg" alt="">
+              </li>  
+              <li class="decisions-link-item">
+                <a href="#">1</a>
+              </li>
+              <li class="decisions-link-item">
+                <a href="#">2</a>
+              </li>
+              <li class="decisions-link-item">
+                <a href="#">3</a>
+              </li>
+              <li class="decisions-link-item">
+                <a href="#">4</a>
+              </li>
+              <li class="decisions-link-item">
+                <a href="#">5</a>
+              </li>
+              ...
+              <li class="decisions-link-item">
+                <a href="#"> 15</a>
+              </li>
+              <li class="decisions-link-item decisions-link-item-img">
+                <img src="img/decisions/vector-move.svg" alt="">
+              </li>
+            </ul>
+          </div>
+    </section>    
 
 </main>
 
-
 <footer>
-    <div class="container">
-      <div class="footer__wrapper">
-        <div class="footer__links">
-          <a class="footer__title" href="index.html">Главная</a>
-        </div>
-        <div class="footer__links">
-          <span class="footer__title">О нас</span>
-          <a class="footer__item" href="about-us.html">О компании</a>
-          <a class="footer__item" href="#">Блог</a>
-          <span class="footer__item">#IWILLNOTSTOP</span>
-        </div>
-        <div class="footer__links">
-          <span class="footer__title">Наш опыт</span>
-          <a class="footer__item" href="index.html#solutions">Решения</a>
-        </div>
-        <div class="footer__links">
-          <span class="footer__title">Карьера</span>
-          <a class="footer__item" href="vacant.html">Вакансии</a>
-          <a class="footer__item" href="#">Работа у нас</a>
-          <a class="footer__item" href="#">Начало карьеры</a>
-        </div>
-        <div class="footer__links">
-          <span class="footer__title">Соцсети</span>
-          <a class="footer__item" href="#"><img src="img/icons/vk.svg" alt="Vkontakte icon">Vkontakte</a>
-          <a class="footer__item" href="#"><img src="img/icons/fb.svg" alt="Facebook icon">Facebook</a>
-          <a class="footer__item" href="#"><img src="img/icons/instagram.svg" alt="Instagram icon">Instagram</a>
-          <a class="footer__item" href="#"><img src="img/icons/youtube.svg" alt="Youtube icon">Youtube</a>
-          <a class="footer__item" href="#"><img src="img/icons/linkedin.svg" alt="Linked In icon">Linked In</a>
-          <a class="footer__item" href="#"><img src="img/icons/habr.svg" alt="Habrahabr icon">Habrahabr</a>
-        </div>
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__links">
+        <a class="footer__title" href="index.html">Главная</a>
       </div>
-      <hr class="footer__separator"/>
-      <div class="footer__wrapper footer__wrapper-column">
-        <div class="footer__container">
-          <img class="footer__logo" src="img/t-system-logo.png" alt="T-System Logo">
-          <span class="footer__text">LIFE IS FOR SHARING</span>
-        </div>
-        <div class="footer__container">
-          <span class="footer__copyright">© 2020, Deutsche Telekom IT Solutions</span>
-          <div class="footer__document-links">
-            <button class="footer__lang">English</button>
-            <button class="footer__lang footer__lang--active">Русский</button>
-            <a href="contact.html">Контакты</a>
-            <a href="disclaimer.html">Отказ от ответственности</a>
-            <a href="#">Защита данных</a>
-            <a href="#">Политика конфиденциальности</a>
-          </div>
+      <div class="footer__links">
+        <span class="footer__title">О нас</span>
+        <a class="footer__item" href="about-us.html">О компании</a>
+        <a class="footer__item" href="#">Блог</a>
+        <span class="footer__item">#IWILLNOTSTOP</span>
+      </div>
+      <div class="footer__links">
+        <span class="footer__title">Наш опыт</span>
+        <a class="footer__item" href="index.html#solutions">Решения</a>
+      </div>
+      <div class="footer__links">
+        <span class="footer__title">Карьера</span>
+        <a class="footer__item" href="vacant.html">Вакансии</a>
+        <a class="footer__item" href="#">Работа у нас</a>
+        <a class="footer__item" href="#">Начало карьеры</a>
+      </div>
+      <div class="footer__links">
+        <span class="footer__title">Соцсети</span>
+        <a class="footer__item" href="#"><img src="img/icons/vk.svg" alt="Vkontakte icon">Vkontakte</a>
+        <a class="footer__item" href="#"><img src="img/icons/fb.svg" alt="Facebook icon">Facebook</a>
+        <a class="footer__item" href="#"><img src="img/icons/instagram.svg" alt="Instagram icon">Instagram</a>
+        <a class="footer__item" href="#"><img src="img/icons/youtube.svg" alt="Youtube icon">Youtube</a>
+        <a class="footer__item" href="#"><img src="img/icons/linkedin.svg" alt="Linked In icon">Linked In</a>
+        <a class="footer__item" href="#"><img src="img/icons/habr.svg" alt="Habrahabr icon">Habrahabr</a>
+      </div>
+    </div>
+    <hr class="footer__separator"/>
+    <div class="footer__wrapper footer__wrapper-column">
+      <div class="footer__container">
+        <img class="footer__logo" src="img/t-system-logo.png" alt="T-System Logo">
+        <span class="footer__text">LIFE IS FOR SHARING</span>
+      </div>
+      <div class="footer__container">
+        <span class="footer__copyright">© 2020, Deutsche Telekom IT Solutions</span>
+        <div class="footer__document-links">
+          <button class="footer__lang">English</button>
+          <button class="footer__lang footer__lang--active">Русский</button>
+          <a href="contact.html">Контакты</a>
+          <a href="disclaimer.html">Отказ от ответственности</a>
+          <a href="#">Защита данных</a>
+          <a href="#">Политика конфиденциальности</a>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
 <!-- Модальные окна -->
 <div class="modal-wrapper hidden animation">
@@ -328,12 +377,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-

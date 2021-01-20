@@ -5074,12 +5074,33 @@ svg .mech-blue {
 
 
 .java-school {
-  padding-top: 120px;
+  /* padding-top: 120px; */
   /* padding-left: 250px; */
-  background-image: url('../img/school/java.png');
+  /* background-image: url('../img/school/java.png');
   background-repeat: no-repeat;
   background-position: 255px 106px;
-  background-size: 616px 353px;
+  background-size: 616px 353px; */
+}
+
+.java-school-container {
+  background-image: url('../img/school/java.png');
+  background-repeat: no-repeat;
+  background-position: -12px -32px;
+  background-size: 607px 406px;
+}
+
+.devops-school-container {
+  background-image: url('../img/school/devops.png');
+  background-repeat: no-repeat;
+  background-position: 5px -3px;
+  background-size: 605px 390px;
+}
+
+.test-school-container {
+  background-image: url('../img/school/test.png');
+  background-repeat: no-repeat;
+  background-position: 5px 0;
+  background-size: 658px 370px;
 }
 
 .java-school__title {
@@ -5095,8 +5116,40 @@ svg .mech-blue {
   font-size: 24px;
 }
 
+@media screen and (max-width:1260px) {
+  .java-school__top {
+    display: block;
+    font-size: 18px;
+    /* java-school__top */
+  }
+  .java-school-container {
+    background-image: none;
+    width: 100%;
+  }
+  .devops-school-container {
+    background-image: none;
+    width: 100%;
+  }
+  .test-school-container {
+    background-image: none;
+    width: 100%;
+  }
+  .java-school__top-interview {
+    margin-left: 76px;
+  }
+  .school__description-results {
+    width: 534px;
+    padding: 33px 44px 43px 63px;
+  }
+  .school__description-conditions {
+    margin-top: 20px;
+  }
+}
+
+
+
 .java-school__top-text {
-  width: 516px;
+  width: 640px;
   /* margin-top: 0; */
 }
 
@@ -5301,7 +5354,7 @@ svg .mech-blue {
   background-repeat: no-repeat;
   z-index: -1;
   background-position: center 280px;
-  
+  background-size: 1382px 370px;
 }
 
 
@@ -5472,7 +5525,7 @@ svg .mech-blue {
 .iwill__choose-container::before {
   position: absolute;
   content: '';
-  width: 1480px;
+  width: 1440px;
   height: 190px;
   background-image: url('../img/nonstop/IWILLNOTSTOP-3.png');
   background-repeat: no-repeat;
@@ -5527,6 +5580,36 @@ svg .mech-blue {
   }
 }
 
+
+@media screen and (min-width:550px) and (max-width:1440px) {
+  .iwill__choose-container::before {
+    background-image: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .container__iwillnotstop-before::before {
+    background-image: none;
+    width: 100%;
+  }  
+}
+
+@media screen and (max-width:1260px) {
+  .iwill-wrap {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .join__to-us {
+    width: 100%;
+  }
+}
+
+
+
 .iwill__main-main {
   margin-top: 0;
 }
@@ -5541,7 +5624,7 @@ svg .mech-blue {
   max-width: 1920px;
   height: 1080px;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .iwill__inner-1 {
@@ -5554,6 +5637,14 @@ svg .mech-blue {
 .iwill__inner-join {
   max-width: 1481px;
   height: 592px;
+  margin: 0 auto;
+}
+
+.iwill__inner-join-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* width: 1440px; */
 }
 
 .iwill__inner-join-left {
@@ -5580,9 +5671,9 @@ svg .mech-blue {
   content: '';
   width: 1480px;
   height: 190px;
-  background-image: url('../img/nonstop/IWILLNOTSTOP-inner.png');
+  background-image: url('../img/nonstop/IWILLNOTSTOP-3.png');
   background-repeat: no-repeat;
-
+  background-position: 48px -54px;
 }
 
 
@@ -5631,3 +5722,248 @@ svg .mech-blue {
 .politic-text {
   font-size: 24px;
 } 
+
+
+/* Decisions */
+
+.decisions-main {
+  margin-top: 0;
+}
+
+.decisions-main-container {
+  background-image: url('../img/decisions/dec-bg.png');
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  height: 563px;
+}
+
+.decisions-main-top {
+  /* padding-top: 100px; */
+  width: 909px;
+  height: 316px;
+  background-image: url('../img/decisions/main-bg.png');
+  background-repeat: no-repeat;
+  background-size: 854px 316px;
+  margin-left: 0;
+  /* padding-left: 0; */
+  padding-left: 145px
+}
+
+.decisions-main-title {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 27px;
+}
+
+.decisions-main-text {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.decisiona-main-description {
+  width: 649px;
+  font-size: 24px;
+  margin-top: 0;
+
+}
+
+.decisions-main-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 24px;
+  list-style: none;
+}
+
+.decisions-main-item {
+  width: 470px;
+}
+
+.decisions-how-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+.decisions-how-item {
+  width: 350px;
+  height: 363px;
+  border-radius: 3px;
+  background-position: -24px 0;
+  background-size: 376px 364px;
+}
+
+.decisions-how-item-text {
+  width: 292px;
+  margin-top: 230px;
+  margin-left: 40px;
+}
+
+.decisions-how-item:nth-child(1) {
+  background-image: url('../img/decisions/group-1.jpg');
+  /* background-position: 0 0;
+  background-size: 376px 364px; */
+}
+
+.decisions-how-item:nth-child(2) {
+  background-image: url('../img/decisions/group-2.jpg');
+  background-size: 378px 373px;
+  background-position: -22px -1px;
+}
+
+.decisions-how-item:nth-child(3) {
+  background-image: url('../img/decisions/group-3.jpg');
+  /* background-position: 0 0;
+  background-size: 376px 364px; */
+}
+
+.decisions-how-item:nth-child(4) {
+  background-image: url('../img/decisions/group-4.jpg');
+  background-position: -10px -1px;
+  background-size: auto;
+}
+
+.decisions-how-item:nth-child(5) {
+  background-image: url('../img/decisions/group-5.jpg');
+  /* background-position: -10px -1px;
+  background-size: auto; */
+}
+
+.decisions-how-item:nth-child(6) {
+  background-image: url('../img/decisions/group-6.jpg');
+  background-position: -24px -136px;
+  background-size: auto;
+}
+
+.decisions-how-item:nth-child(7) {
+  background-image: url('../img/decisions/group-7.png');
+  /* background-position: -24px -136px;
+  background-size: auto; */
+} 
+
+.decisions-how-item:nth-child(8) {
+  background-image: url('../img/decisions/group-8.png');
+}  
+
+.decisions-how-item:nth-child(9) {
+  background-image: url('../img/decisions/group-9.png');
+}  
+
+.decisions-how-item:nth-child(n+1) {
+  margin-top: 25px;
+}  
+
+.decisions-link-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 100px;
+  /* background-image: url('../img/decisions/vector-back.svg');
+  background-repeat: no-repeat;
+  background-position: left 3px; */
+}
+
+.decisions-link-item {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.decisions-link-item:hover {
+  cursor: pointer;
+}
+
+.decisions-link-item a:hover {
+  color: #e20074;
+}
+
+
+.decisions-link-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.decisions-link-item-img {
+  margin-top: 3px;
+}
+
+.decisions-link-item-img:nth-child(1) {
+  padding-left: 0;
+}
+
+@media screen and (max-width:1130px) {
+  .decisions-how-item:nth-child(n+1) {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width:993px) and (max-width:1079px) {
+  .decisions-how-item:nth-child(n+1) {
+    margin-top: 10px;
+    /* margin: 0 85px; */
+  }
+}
+
+@media screen and (max-width:992px) {
+  .decisions-main-top {
+    background-image: none;
+    width: 100%; 
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    padding-left: 0px;
+  }
+  .decisions-main-top {
+    text-align: center;
+  }
+  .decisions-main-description {
+    margin: 0 auto;
+    width: auto;
+  }
+  .decisions-how-list {
+    justify-content: center;
+  }
+  .decisions-main-item {
+    font-size: 18px;
+    width: 300px;
+  }
+  .decisions-how-item {
+    margin-bottom: 20px;
+  }
+  .decisions-how-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .decisions-main-list {
+    justify-content: space-around;
+  }
+  .section-wrap {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:729px) {
+  .decisions-how-item:nth-child(n) {
+    margin-right: 30px;
+  }
+} 
+
+@media screen and (min-width:550) and (max-width:630px) {
+  .decisions-main-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .decisions-main-item {
+    font-size: 16px;
+    width: 220px;
+  }
+  .decisions-how-item:nth-child(n) {
+    margin-right: 0;
+  }
+}
