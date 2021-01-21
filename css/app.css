@@ -5520,6 +5520,7 @@ svg .mech-blue {
 
 .iwill__choose-container {
   position: relative;
+  display: flex;
 }
 
 .iwill__choose-container::before {
@@ -5545,7 +5546,7 @@ svg .mech-blue {
   font-size: 40px;
   font-weight: 700;
   margin-top: 90px;
-  margin-left: 0.5em;
+  margin-left: 0;
 }
 
 .iwill__choose-left-title span {
@@ -5565,13 +5566,32 @@ svg .mech-blue {
   cursor: pointer;
 }
 
+.iwill__choose-right {
+  margin-top: 6em;
+  margin-left: 8em;
+}
+
 .iwill__choose-right-small {
+  display: block;
+  text-align: right;
   font-size: 40px;
   font-weight: 700;
 }
 
 .iwill__choose-right-small span {
   color: #e20074;
+}
+
+@media screen and (max-width:1260px) {
+  .iwill__choose-right {
+    margin-left: 0;
+  }
+  .iwill-wrap {
+    display: block;
+  }
+  .iwill__choose-right-small {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width:1240px) {
@@ -5593,18 +5613,25 @@ svg .mech-blue {
     background-image: none;
     width: 100%;
   }  
-}
-
-@media screen and (max-width:1260px) {
-  .iwill-wrap {
+  .iwill__title {
+    margin-top: 1.5em;
+  }
+  .iwill__list {
+    margin-bottom: 0;
+  }
+  .iwill__choose-container {
     display: block;
   }
 }
 
 
+
 @media screen and (max-width:768px) {
   .join__to-us {
     width: 100%;
+  }
+  .iwill__choose-video-frame {
+    width: 550px;
   }
 }
 
@@ -6120,6 +6147,9 @@ svg .mech-blue {
 }
 
 @media screen and (max-width:992px) {
+  .decarticle-top-container {
+    background-image: none;
+  }
   .decarticle-about-wrap {
     padding-left: 1em;
   }
@@ -6251,6 +6281,10 @@ svg .mech-blue {
 
 /* BLog */
 
+.blog-main {
+  margin-top: 0;
+}
+
 .blog-trends {
   width: 1175px;
   height: 368px;
@@ -6270,4 +6304,116 @@ svg .mech-blue {
   font-size: 24px;
   font-weight: 400;
   margin: 0 auto;
+}
+
+.blog-how-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1174px;
+  padding-left: 0;
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+
+.blog-how-item {
+  width: 575px;
+  height: 365px;
+  padding: 250px 180px 42px 53px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blog-how-item-1 {
+  background-image: url('../img/blog/how-1.png');
+}
+
+.blog-how-item-2 {
+  background-image: url('../img/blog/how-2.png');
+}
+
+
+.blog-remote-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1174px;
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.blog-remote-item {
+  width: 377px;
+  height: 365px;
+  padding: 271px 37px 19px;
+}
+
+.blog-remote-span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blog-remote-item-1 {
+  background-image: url('../img/blog/remote-1.png');
+}
+
+.blog-remote-item-2 {
+  background-image: url('../img/blog/remote-2.png');
+}
+
+.blog-remote-item-3 {
+  background-image: url('../img/blog/remote-3.png');
+}
+
+.blog-remote-item:nth-child(3n+1) {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* 405 */
+
+.btn-405 {
+  padding: 0.6em 4.7em;
+  text-align: center;
+}
+
+.btn-405-grey {
+  margin-top: 1em;
+  background-color: rgba(20, 22, 30, 1);
+  border: 1px solid #fff;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.title-405 {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.span-block-405 {
+  margin-bottom: -6em;
+  text-align: center;
+}
+
+.span-405 {
+  text-align: center;
+  font-size: 278px; 
+  font-weight: 700;
+  color: #e20074;
+}
+
+.span-405-margin {
+  margin-right: 1em;
+}
+
+.text-405 {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 314px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
