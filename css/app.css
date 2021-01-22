@@ -5655,10 +5655,10 @@ svg .mech-blue {
 }
 
 .iwill__inner-1 {
-  background-image: url('../img/nonstop/yurii_inner.jpg');
-  background-size: cover;
+  background-image: url('../img/nonstop/group\ 630.png');
+  background-size: 1440px 460px;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center;
 }
 
 .iwill__inner-join {
@@ -5687,6 +5687,10 @@ svg .mech-blue {
 
 .iwill__inner-join-left-title span {
   color: #e20074;
+}
+
+.iwill__inner-join-right {
+  margin-top: 2.8em;
 }
 
 .iwill__inner-container {
@@ -5803,6 +5807,10 @@ svg .mech-blue {
   padding-left: 0;
   font-size: 24px;
   list-style: none;
+}
+
+.decisions-main-list-text-300 {
+  font-weight: 300;
 }
 
 .decisions-main-item {
