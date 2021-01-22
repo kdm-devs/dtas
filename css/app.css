@@ -1530,6 +1530,16 @@ body {
     margin: 30px auto 0
   }
 }
+
+@media screen and (min-width:993px) and (max-width:1024px) {
+  .team-row {
+    width: 90% !important;
+  }
+  .project__title {
+    width: 90% !important;
+  }
+}
+
 .advantage {
   padding-top: 169px
 }
@@ -5648,8 +5658,8 @@ svg .mech-blue {
 }
 
 .iwill__inner {
-  max-width: 1920px;
-  height: 1080px;
+  max-width: 1440px;
+  height: 460px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -5695,16 +5705,19 @@ svg .mech-blue {
 
 .iwill__inner-container {
   position: relative;
+  margin-top: 15em;
 }
 
 .iwill__inner-container::before {
   position: absolute;
   content: '';
-  width: 1480px;
-  height: 190px;
-  background-image: url('../img/nonstop/IWILLNOTSTOP-3.png');
+  width: 1250px;
+  height: 200px;
+  background-image: url('../img/nonstop/non-stop-inner.png');
   background-repeat: no-repeat;
-  background-position: 48px -54px;
+  background-position: center top;
+  background-size: 1250px 190px;
+  top: -6em;
 }
 
 
@@ -5772,12 +5785,14 @@ svg .mech-blue {
   /* padding-top: 100px; */
   width: 909px;
   height: 316px;
-  background-image: url('../img/decisions/main-bg.png');
+  /* background-image: url('../img/decisions/main-bg.png'); */
+  background-image: url('../img/decisions/union.svg');
   background-repeat: no-repeat;
-  background-size: 854px 316px;
+  background-size: 2138px 316px;
+  background-position: -81em 0em;
   margin-left: 0;
-  /* padding-left: 0; */
-  padding-left: 145px
+  padding-left: 110px
+
 }
 
 .decisions-main-title {
@@ -5829,6 +5844,7 @@ svg .mech-blue {
 }
 
 .decisions-how-item {
+  position: relative;
   width: 350px;
   height: 363px;
   border-radius: 3px;
@@ -5837,8 +5853,19 @@ svg .mech-blue {
 }
 
 .decisions-how-item:hover {
-  transform: scale(1.02);
-  transition: .7s;
+  /* transform: scale(1.02);
+  transition: .7s; */
+  opacity: 0.7;
+}
+
+.decisions-how-item-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-decoration: none;
 }
 
 .decisions-how-item-text {
@@ -5950,6 +5977,25 @@ svg .mech-blue {
     /* margin: 0 85px; */
   }
 }
+
+@media screen and (min-width:993px) and (max-width:1100px) {
+  .decisions-how-list {
+    justify-content: space-evenly;
+  }
+}
+
+
+@media screen and (min-width:1080px) and (max-width:1100px) {
+  .decisions-how-item:nth-child(3n+2) {
+    /* margin-left: 1em;
+    margin-right: 1em; */
+    justify-content: space-between;
+  } 
+  
+  /* .decisions-how-list {} */
+}
+
+
 
 @media screen and (max-width:992px) {
   .decisions-main-top {
@@ -6306,15 +6352,34 @@ svg .mech-blue {
 }
 
 .blog-trends {
+  position: relative;
   width: 1175px;
   height: 368px;
-  padding: 30px 740px 53px 55px;
+  /* padding: 30px 740px 53px 55px; */
   background-image: url('../img/blog/bg.png');
 }
 
+.blog-trends:hover {
+  opacity: 0.7;
+}
+
+.blog-trends-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .blog-trends-link:hover {
+  opacity: .7s;
+} */
+
 .blog-trends-title {
   width: 375px;
-  margin: 0 auto;
+  margin: 30px 0 0 55px;
   font-size: 36px;
   font-weight: 700;
 }
@@ -6323,7 +6388,7 @@ svg .mech-blue {
   width: 386px;
   font-size: 24px;
   font-weight: 400;
-  margin: 0 auto;
+  margin: 0 0 0 55px;
 }
 
 .blog-how-list {
@@ -6345,8 +6410,7 @@ svg .mech-blue {
 }
 
 .blog-how-item:hover {
-  transform: scale(1.02);
-  transition: .7s;
+  opacity: 0.7;
 }
 
 .blog-how-item-link {
@@ -6392,8 +6456,7 @@ svg .mech-blue {
 }
 
 .blog-remote-item:hover {
-  transform: scale(1.02);
-  transition: 0.7s;
+  opacity: 0.7;
 }
 
 .blog-remote-item-link {
