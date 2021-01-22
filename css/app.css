@@ -5828,6 +5828,11 @@ svg .mech-blue {
   background-size: 376px 364px;
 }
 
+.decisions-how-item:hover {
+  transform: scale(1.02);
+  transition: .7s;
+}
+
 .decisions-how-item-text {
   width: 292px;
   margin-top: 230px;
@@ -5981,6 +5986,12 @@ svg .mech-blue {
   }
 } 
 
+@media screen and (max-width:768px) {
+  .decisiona-main-description {
+    width: auto;
+  }
+}
+
 @media screen and (min-width:550) and (max-width:630px) {
   .decisions-main-item {
     margin-left: 10px;
@@ -6031,6 +6042,7 @@ svg .mech-blue {
 
 .decarticle-about-text {
   width: 895px;
+  margin-top: 2.5em;
   font-size: 24px;
   font-weight: 400;
   /* text-align: center; */
@@ -6085,6 +6097,7 @@ svg .mech-blue {
   width: 895px;
   background-color: #262626;
   padding: 25px 416px 36px 60px;
+  margin-bottom: 10em;
   list-style: none;
   border-radius: 12px;
 }
@@ -6206,6 +6219,7 @@ svg .mech-blue {
 @media screen and (min-width:550px) and (max-width:768px) {
   .decarticle-list {
     width: fit-content;
+    width: 88%;
   }
   .decarticle-list-title {
     width: max-content;
@@ -6219,9 +6233,7 @@ svg .mech-blue {
   .decarticle-list-item:not(:last-child)::before {
     width: 22em;
   }
-  .decarticle-list {
-    width: 88%;
-  }
+  
   .blogarticle-list-item {
     width: 20em !important
   }
@@ -6316,11 +6328,34 @@ svg .mech-blue {
 }
 
 .blog-how-item {
+  position: relative;
   width: 575px;
   height: 365px;
   padding: 250px 180px 42px 53px;
   font-size: 24px;
   font-weight: 700;
+}
+
+.blog-how-item:hover {
+  transform: scale(1.02);
+  transition: .7s;
+}
+
+.blog-how-item-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-how-span {
+  display: block;
+  width: 68%;
+  margin-top: 10.3em;
+  margin-left: 2.3em;
 }
 
 .blog-how-item-1 {
@@ -6342,14 +6377,34 @@ svg .mech-blue {
 }
 
 .blog-remote-item {
+  position: relative;
   width: 377px;
   height: 365px;
   padding: 271px 37px 19px;
 }
 
+.blog-remote-item:hover {
+  transform: scale(1.02);
+  transition: 0.7s;
+}
+
+.blog-remote-item-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
 .blog-remote-span {
   font-size: 24px;
   font-weight: 700;
+  display: block;
+  margin-top: 11.4em;
+  margin-left: 2em;
+  width: 80%;
 }
 
 .blog-remote-item-1 {
