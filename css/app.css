@@ -5789,6 +5789,7 @@ svg .mech-blue {
 
 .iwill__inner-main {
   margin-top: 0;
+  background-color: #ebecec;
 }
 
 .iwill__inner {
@@ -5852,6 +5853,7 @@ svg .mech-blue {
   background-position: center top;
   background-size: 1250px 190px;
   top: -6em;
+  margin-left: 5em;
 }
 
 /* Этих изменений нет у Вадима (до example)) */
@@ -6436,6 +6438,15 @@ svg .mech-blue {
   background-position: 8em center;
 }
 
+.decarticle-list-item a:hover {
+  color: #e20074;
+}
+
+.decarticle-list-item:nth-child(5):hover {
+  background-position: 10em center;
+  transition: 1s;
+}
+
 .decarticle-list-link {
   color: #fff;
   text-decoration: none;
@@ -6447,10 +6458,16 @@ svg .mech-blue {
   padding-right: 2.6em;
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:872px) {
   .decarticle-top-container {
     background-image: none;
   }
+}  
+
+@media screen and (max-width:992px) {
+  /* .decarticle-top-container {
+    background-image: none;
+  } */
   .decarticle-about-wrap {
     padding-left: 1em;
   }
