@@ -5131,6 +5131,7 @@ svg .mech-blue {
 
 
 .java-school {
+  margin-top: 6em;
   /* padding-top: 120px; */
   /* padding-left: 250px; */
   /* background-image: url('../img/school/java.png');
@@ -5172,119 +5173,6 @@ svg .mech-blue {
   justify-content: space-between;
   font-size: 24px;
 }
-
-@media screen and (max-width:1260px) {
-  .java-school__top {
-    /* display: block; */
-    font-size: 18px;
-    /* java-school__top */
-  }
-  .java-school-container {
-    background-image: none;
-    width: 100%;
-  }
-  .devops-school-container {
-    background-image: none;
-    width: 100%;
-  }
-  .test-school-container {
-    background-image: none;
-    width: 100%;
-  }
-  .java-school__top-interview {
-    margin-left: 76px;
-  }
-
-  /* Этих изменений нет у Вадима:  */
-
-  .school__description-conditions {
-    margin-top: 20px;
-  }
-  .title-school {
-    font-size: 48px;
-  }
-  .school__left-description {
-    font-size: 24px;
-  }
-  .school__right-text {
-    font-size: 24px;
-  }
-  .school__description-results {
-    width: 534px !important;
-    padding-right: 41px !important;
-  }
-  .animate__animated {
-    margin-left: 2em;
-  }
-} 
-
-
-@media screen and(min-width:550px) and (max-width:768px) {
-  .school__description-results {
-    width: 534px !important;
-    padding-right: 41px !important;
-  }  
-  .school__description {
-    display: block;
-  }
-  .school__description-demands {
-    margin-right: 0 !important;
-  }
-}
-
-
-@media screen and (max-width:992px) {
-  .school__left {
-    margin-left: -2em !important;
-  }
-  .title-school {
-    margin-top: 6em !important;
-    font-size: 20px !important;
-  }
-  .school__right-text {
-    margin-top: 6.5em !important;
-    /* margin-left: 3em !important; */
-    font-size: 18px !important;
-  }
-  .school__tight-title {
-    font-size: 24px !important;
-  }
-  .school__right {
-    padding-left: 3em !important;
-  }
-  .school__right-text:nth-child(2) {
-    margin-top: 0 !important;
-  }
-  .school__right-text-second {
-    margin-top: 0 !important;
-  }
-}
-
-@media screen and (min-width:550px) and (max-width:812px) {
-  .school__begin {
-    background-image: none !important;
-  }
-  .main-wave {
-    background-image: none !important;
-  }
-  .title-school {
-    margin-left: 2em;
-  }
-  .school__left-description {
-    margin-left: 2em;
-  }
-  .schools__block {
-    display: block;
-  }
-  .java-school__top {
-    display: block;
-  }
-  .school__description-demands {
-    margin-right: 0 !important;
-  }
-}
-
-
 
 
 .java-school__top-text {
@@ -6897,6 +6785,199 @@ svg .mech-blue {
     margin-top: 6em;
   }
 }
+
+
+
+
+@media screen and (max-width:1260px) {
+  .java-school__top {
+    /* display: block; */
+    font-size: 18px;
+    /* java-school__top */
+  }
+  .java-school-container {
+    background-image: none;
+    width: 100%;
+  }
+  .devops-school-container {
+    background-image: none;
+    width: 100%;
+  }
+  .test-school-container {
+    background-image: none;
+    width: 100%;
+  }
+  .java-school__top-interview {
+    margin-left: 76px;
+  }
+
+  /* Этих изменений нет у Вадима:  */
+
+  .school__description-conditions {
+    margin-top: 20px;
+  }
+  .title-school {
+    font-size: 48px;
+  }
+  .school__left-description {
+    font-size: 24px;
+  }
+  .school__right-text {
+    font-size: 24px;
+  }
+  .school__description-results {
+    width: 534px !important;
+    padding-right: 41px !important;
+  }
+  .animate__animated {
+    margin-left: 7em !important;
+  }
+} 
+
+
+@media screen and(min-width:550px) and (max-width:768px) {
+  .school__description-results {
+    width: 534px !important;
+    padding-right: 41px !important;
+  }  
+  .school__description {
+    display: block;
+  }
+  .school__description-demands {
+    margin-right: 0 !important;
+  }
+  .java-school__top-text, .java-school__top-text-devops {
+    width: 70% !important;
+  }
+  .schools__item, .schools__item-desktop, .schools__item-test-school {
+    /* display: inline-block; */
+    /* width: 60% !important; */
+    display: inline !important;
+    width: 50% !important;
+  }
+  .schools__block {
+    display: inline-block !important;
+  }
+}
+
+@media screen and (max-width:599px) {
+  .main-wave {
+    background-image: none !important;
+  }
+  .school__begin {
+    background-image: none !important;
+  }
+  .school__left {
+    margin-left: 2em !important;
+  }
+
+  /* Проверить вот эти свойства на этом разрешении : */
+  .school__left {
+    margin-left: 1em !important;
+  }
+  .school__left-description {
+    width: 180px;
+    margin-left: 2em;
+  }
+  .school__right {
+    display: table;
+    padding-left: 2.5em !important;
+    width: 450px;
+  }
+}
+
+
+@media screen and (min-width:320px) and (max-width:550px) {
+  .school__wrap {
+    flex-direction: column;
+    width: max-content;
+  }
+  .school__right-text {
+    margin-top: 0 !important;
+  }
+  .school__left-description {
+    width: auto;
+  }
+  .title-school {
+    margin: 0 auto;
+  }
+  .schools__block {
+    flex-wrap: wrap !important;
+  }
+  .school__description-demands {
+    margin-right: 0 !important;
+  }
+  .java-school__top {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+  /* .school__left {
+    margin-left: -2em !important;
+  } */
+  .title-school {
+    margin-top: 6em !important;
+    font-size: 20px !important;
+  }
+  .school__right-text {
+    margin-top: 6.5em !important;
+    /* margin-left: 3em !important; */
+    font-size: 18px !important;
+  }
+  .school__tight-title {
+    font-size: 24px !important;
+  }
+  .school__right {
+    padding-left: 3em !important;
+  }
+  .school__right-text:nth-child(2) {
+    margin-top: 0 !important;
+  }
+  .school__right-text-second {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (min-width:550px) and (max-width:812px) {
+  .school__begin {
+    /* background-image: none !important; */
+  }
+  .main-wave {
+    /* background-image: none !important; */
+  }
+  .title-school {
+    margin-left: 2em;
+  }
+  .school__left-description {
+    margin-left: 2em;
+  }
+  .schools__block {
+    display: block;
+  }
+  .java-school__top {
+    display: block;
+  }
+  .school__description-demands {
+    margin-right: 0 !important;
+  }
+}
+
+
+
+
+
 
 
 
