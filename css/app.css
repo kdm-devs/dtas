@@ -6025,27 +6025,24 @@ svg .mech-blue {
 }
 
 .decisions-main-top {
-  /* padding-top: 100px; */
-  /* width: 909px; */
-  /* height: 316px; */
-  /* background-image: url('../img/decisions/main-bg.png'); */
-  /* background-image: url('../img/decisions/union.svg');
+  /* padding-top: 100px; 
+  width: 909px; 
+  height: 316px; 
   background-repeat: no-repeat;
   background-size: 2138px 316px;
   background-position: -80.2em 0em;
   margin-left: -166px;
-  padding-left: 110px; */
-  /* padding-top: 100px; */
+  padding-left: 110px; 
+  margin-left: -166px;
+  max-width: 3660px; 
+  margin-top: 10em; 
+  padding-top: 100px; */
   width: 70%;
-  height: 316px;
-  /* background-image: url(../img/decisions/main-bg.png); */
   background-image: url(../img/decisions/union.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin-left: -166px; */
+  background-position-x: 100%; 
   padding-left: 110px;
-  /* max-width: 3660px; */
-  /* margin-top: 10em; */
   display: flex;
   justify-content: flex-end;
 }
