@@ -6008,6 +6008,9 @@ svg .mech-blue {
 
 .decisions-main {
   margin-top: 0;
+  /* width: 100%;
+  margin: 0 auto;
+  max-width: 3600px; */
 }
 
 .decisions-main-container {
@@ -6015,20 +6018,41 @@ svg .mech-blue {
   background-repeat: no-repeat;
   padding-top: 120px;
   height: 563px;
+  width: 100%; 
+  max-width: 3660px;
+    background-size: cover;
+    /* padding-bottom: 82em; */
 }
 
 .decisions-main-top {
   /* padding-top: 100px; */
-  width: 909px;
-  height: 316px;
+  /* width: 909px; */
+  /* height: 316px; */
   /* background-image: url('../img/decisions/main-bg.png'); */
-  background-image: url('../img/decisions/union.svg');
+  /* background-image: url('../img/decisions/union.svg');
   background-repeat: no-repeat;
   background-size: 2138px 316px;
   background-position: -80.2em 0em;
   margin-left: -166px;
+  padding-left: 110px; */
+  /* padding-top: 100px; */
+  width: 70%;
+  height: 316px;
+  /* background-image: url(../img/decisions/main-bg.png); */
+  background-image: url(../img/decisions/union.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-left: -166px; */
   padding-left: 110px;
+  /* max-width: 3660px; */
+  /* margin-top: 10em; */
+  display: flex;
+  justify-content: flex-end;
+}
 
+.decisions-main-top div {
+  max-width: 1300px;
+  width: 100%;
 }
 
 .decisions-main-title {
