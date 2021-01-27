@@ -5485,6 +5485,8 @@ svg .mech-blue {
   background-repeat: no-repeat;
   background-position: center 0;
   margin: 0 auto;
+  background-size: cover;
+  max-width: 3660px;
   /* background-size: 99%; */
 }
 
@@ -5492,8 +5494,9 @@ svg .mech-blue {
   background-image: url(../img/school/wave.png);
   background-repeat: no-repeat;
   z-index: -1;
-  background-position: center 280px;
-  background-size: 1382px 370px;
+  background-position: center 200px;
+  background-size: cover;
+  max-width: 3660px;
 }
 
 
@@ -6040,12 +6043,13 @@ svg .mech-blue {
   width: 70%;
   background-image: url(../img/decisions/union-2.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position-x: 100%; 
   padding-left: 110px;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 2em;
+  margin-left: -5em;
 }
 
 .decisions-main-top div {
@@ -6895,5 +6899,24 @@ svg .mech-blue {
 }
 
 
+
+/* Адаптив для decisions-2 на разрешении от 550 до 320 : */
+
+
+@media screen and (min-width:320px) and (max-width:440px) {
+  .decisions-how-item-text {
+    width: 235px;
+    margin-top: 260px;
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  .decisions-main-title {
+    margin: 0 auto
+  }
+  .decisions-main-list-text {
+    font-size: 16px;
+    width: 90%;
+  }
+}
 
 
