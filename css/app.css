@@ -6513,6 +6513,9 @@ svg .mech-blue {
     font-size: 20px !important;
     max-width: 300px !important;
   }
+  .decarticle-btn {
+    width: 80%;
+  }
 }
 
 
