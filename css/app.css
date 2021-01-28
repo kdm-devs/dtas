@@ -6214,9 +6214,10 @@ svg .mech-blue {
 /* Decisions - article */ 
 
 .decarticle-top {
-  padding-bottom: 85px;
   height: 313px;
-  padding-left: 3.5em;
+  padding-bottom: 85px;
+  margin-left: 3em;
+  /* padding-left: 3.5em; */
   /* background-image: url('../img/decisions-articles/bg-top.png'); */
 }
 
@@ -6238,6 +6239,10 @@ svg .mech-blue {
 
 .decarticle-top-container {
   background-image: url('../img/decisions-articles/bg-top.png');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: cover;
+  max-width: 3660px;
 }
 
 .decarticle-about-wrap {
@@ -6398,7 +6403,7 @@ svg .mech-blue {
     width: 750px;
   }
   .decarticle-top-title {
-    margin-top: 1.5em;
+    padding-top: 1.5em;
   }
   .decarticle-about-figure {
     margin-bottom: -1.8em;
@@ -6496,7 +6501,10 @@ svg .mech-blue {
 
 .blogarticle-top-container {
   background-image: url('../img/blog-articles/top-bg.png');
-  background-size: 1440px 313px;
+  background-size: cover;
+  background-position-x: 100%;
+  max-width: 3660px;
+  background-repeat: no-repeat;
 }
 
 .blogarticle-list-item {
@@ -6505,7 +6513,7 @@ svg .mech-blue {
 
 @media screen and (max-width:992px) {
   .blogarticle-top-container {
-    background-image: none !important;
+    /* background-image: none !important; */
   }
 }  
 
@@ -6518,8 +6526,10 @@ svg .mech-blue {
 
 .blog-trends {
   position: relative;
-  width: 1175px;
+  max-width: 1175px;
+  margin: 0 auto;
   height: 368px;
+  margin-bottom: 1em;
   /* padding: 30px 740px 53px 55px; */
   background-image: url('../img/blog/bg.png');
 }
@@ -6559,10 +6569,12 @@ svg .mech-blue {
 .blog-how-list {
   display: flex;
   justify-content: space-between;
-  width: 1174px;
+  max-width: 1175px;
+  margin: 0 auto;
   padding-left: 0;
   margin-bottom: 1.5em;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .blog-how-item {
@@ -6572,6 +6584,7 @@ svg .mech-blue {
   padding: 250px 180px 42px 53px;
   font-size: 24px;
   font-weight: 700;
+  /* margin-bottom: 1em; */
 }
 
 .blog-how-item:hover {
@@ -6607,7 +6620,8 @@ svg .mech-blue {
 .blog-remote-list {
   display: flex;
   justify-content: space-between;
-  width: 1174px;
+  max-width: 1175px;
+  margin: 0 auto;
   padding-left: 0;
   list-style: none;
   flex-wrap: wrap;
@@ -6615,7 +6629,7 @@ svg .mech-blue {
 
 .blog-remote-item {
   position: relative;
-  width: 377px;
+  width: 375px;
   height: 365px;
   padding: 271px 37px 19px;
 }
@@ -6910,6 +6924,49 @@ svg .mech-blue {
   .java-school__top {
     display: block;
   }
+
+/* Стили для blog-article : */
+  .decarticle-list {
+    background-color: initial;
+  }
+  .decarticle-list-item:not(:last-child)::before {
+    width: 33em;
+  }
+  .decarticle-list-link {
+    font-size: 20px;
+  }
+  .decarticle-top {
+    width: max-content !important;
+    padding-top: 5em;
+  }
+  .decarticle-about-figure {
+    padding-top: 4em;
+  }
+  .decarticle-list {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width:872px) and (max-width:992px) {
+  .blogarticle-top-container {
+    background-position-y: 3em;
+  }
+}
+
+@media screen and (max-width:871px) {
+  .blogarticle-top-container {
+    background-image: none;
+  }
+  .decarticle-top-title {
+    padding-top: 3em !important;
+  }
+}
+
+@media screen and (min-width:551px) and (max-width:768px) {
+  .decarticle-top {
+    padding-top: 5em;
+    margin-left: 3em;
+  }
 }
 
 @media screen and (min-width:320px) and (max-width:425px) {
@@ -6992,6 +7049,20 @@ svg .mech-blue {
 }
 
 
+/* Стили для decisions-artcies : */
+
+
+@media screen and (min-width:320px) and (max-width:549px) {
+  .decarticle-list-title {
+    width: max-content
+  }
+  .decarticle-list-item {
+    width: max-content;
+  }
+  .decarticle-list-item:not(:last-child)::before {
+    width: 20em;
+}
+}
 
 
 
@@ -7079,3 +7150,111 @@ svg .mech-blue {
 }
 
 
+/* Адаптив для Blog */
+
+@media screen and (min-width:993px) and (max-width:1260px) {
+  .blog-how-item {
+    width: 450px;
+    font-size: 22px;
+  }
+.blog-how-span {
+    margin-top: 12.3em;
+  }
+.blog-remote-item {
+    width: 300px
+  }
+.blog-remote-span {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width:1261px) {
+  .blog-title {
+    margin-left: .6em;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .blog-how-item-1 {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width:550px) and (max-width:992px) {
+  .blog-trends-title {
+    font-size: 35px !important;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+  .blog-title {
+    margin-top: 2em
+  }  
+  .blog-how-item {
+    width: 350px;
+  }
+  .blog-how-span {
+    font-size: 20px;
+    margin-top: 13.3em;
+  }
+  .blog-how-item-2 a span {
+    width: auto;
+  }
+  .blog-remote-item {
+    width: 230px;
+  }
+  .blog-remote-span {
+    font-size: 20px;
+    margin-top: 14.5em;
+  }
+  .blog-remote-item {
+    background-position-x: center;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  .blog-title {
+    margin-top: 3em
+  }  
+  .blog-how-item-1 {
+    margin-bottom: 16px;
+  }
+  .blog-remote-item-2, .blog-remote-item-3 {
+    margin-bottom: 16px;
+  } 
+  .blog-remote-list {
+    margin: 0 auto;
+  }
+  .blog-remote-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:450px) {
+  .blog-trends-title {
+    font-size: 24px !important;
+    margin-bottom: 1.7em;
+  }
+  /* .blog-trends-text {
+    font-size: 20px;
+    margin-left: 30px;
+    text-align: center;
+    margin-right: 0;
+    max-width: 300px;
+  } */
+  .blog-trends {
+    text-align: center;
+  }
+  .blog-trends-text {
+    margin: auto;
+    max-width: 300px;
+    font-size: 20px;
+  }
+  .blog-how-span, .blog-remote-span {
+    font-size: 20px;
+    width: auto;
+    margin-top: 13.5em;
+    margin-left: 1.5em;
+  }
+}
