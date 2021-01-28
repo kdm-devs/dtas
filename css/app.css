@@ -6944,7 +6944,7 @@ svg .mech-blue {
   }
   .school__description-item-2::before {
     background-size: 60%;
-    background-position: center 15px;
+    background-position: center 5px;
   }
   .school__description-item-1::before {
     background-size: 52%;
@@ -6969,7 +6969,19 @@ svg .mech-blue {
     margin-left: 0;
   }
   .social {
-    padding-bottom: 20px;
+    padding-bottom: 20px !important;
+  }
+  .title-school {
+    text-align: center;
+  }
+  .schools__link {
+    font-size: 20px;
+  }
+  .school__wrap {
+    padding-bottom: 0 !important;
+  }
+  h1, h2 {
+    font-size: 30px !important;
   }
 }
 
