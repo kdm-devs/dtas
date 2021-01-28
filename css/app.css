@@ -6503,9 +6503,11 @@ svg .mech-blue {
   }
   .decarticle-list {
     margin-left: 10px !important;
+    padding-right: 0;
+    padding-left: 0;
   }
   .decarticle-list-item:not(:last-child)::before {
-    width: 15em;
+    width: 15em !important;
   }
   .decarticle-top-title {
     font-size: 20px !important;
