@@ -6492,6 +6492,29 @@ svg .mech-blue {
   }
 }
 
+@media screen and (min-width:320px) and (max-width:549px) {
+  .decarticle-about-text, .decarticle-about-quote {
+    width: auto !important;
+    max-width: 300px !important;
+    font-size: 20px !important;
+  }
+  .decarticle-list-item {
+    max-width: 280px;
+  }
+  .decarticle-list {
+    margin-left: 10px !important;
+  }
+  .decarticle-list-item:not(:last-child)::before {
+    width: 15em;
+  }
+  .decarticle-top-title {
+    font-size: 20px !important;
+    max-width: 300px !important;
+  }
+}
+
+
+
 /* @media screen and (min-width:681px) and (max-width:768px) {
   
 } */
