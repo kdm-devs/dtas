@@ -2014,8 +2014,8 @@ body {
     padding: 30px 0
   }
   .subtitle--social {
-    font-size: 16px;
-    margin: 0
+    /* font-size: 16px; */
+    margin: 1em 0
   }
   .social-inner {
     position: relative;
@@ -5643,6 +5643,32 @@ svg .mech-blue {
   }
 }
 
+@media screen and (max-width:550px) {
+  .iwill__choose-container::before {
+    background-image: none;
+    width: auto;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:550px) {
+  .iwill__choose-video-frame {
+    /* max-width: 300px; */
+    width: auto;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:450px) {
+  .iwill__title {
+    background-color: inherit
+  }
+}
+
+
+
+
+
+
+
 @media screen and (max-width:992px) {
   .container__iwillnotstop-before::before {
     background-image: none;
@@ -5737,12 +5763,14 @@ svg .mech-blue {
 .iwill__inner-container::before {
   position: absolute;
   content: '';
-  width: 1250px;
+  /* width: 1250px; */
+  width: 1185px;
   height: 200px;
   background-image: url('../img/nonstop/non-stop-inner.png');
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 1250px 190px;
+  /* background-size: 1250px 190px; */
+  background-size: 1185px 190px;
   top: -6em;
   margin-left: 5em;
 }
@@ -7286,3 +7314,40 @@ svg .mech-blue {
     margin-left: 1.5em;
   }
 }
+
+
+
+/* I will not stop - inner */ 
+
+@media screen and (min-width:320px) and (max-width:549px) {
+  .iwill__inner-1 {
+    background-position: -11em 2em;
+  }
+  .iwill__inner-join-wrap {
+    flex-direction: column !important;
+  }
+  /* .iwill__inner-join-left {
+    display: block !important;
+  }
+  .iwill__inner-join-right {
+    display: block !important;
+  } */
+  .iwill__inner-iframe {
+    width: max-content !important;
+    margin-top: 5em;
+    /* max-width: 300px !important; */
+  }
+  .join__to-us {
+    margin-top: 11em
+  }
+  .iwill__choose-left-btn {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:430px) {
+  .iwill__inner-iframe {
+    margin-top: 12em;
+  }
+}
+
