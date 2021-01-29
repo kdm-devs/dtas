@@ -5378,7 +5378,7 @@ svg .mech-blue {
   font-weight: 400;
 }
 
-.school__tight-title {
+.school__right-title {
   font-size: 30px;
   margin: 42px 0;
 }
@@ -7035,13 +7035,17 @@ svg .mech-blue {
     width: max-content;
   }
   .school__right-text {
-    margin-top: 0 !important;
+    margin-top: 2em !important;
+    width: 310px;
+  }
+  .school__right-title {
+    width: 310px;
   }
   .school__left-description {
-    width: auto;
+    width: 310px;
   }
   .title-school {
-    margin: 0 auto;
+    margin: 0;
   }
   .schools__block {
     flex-wrap: wrap !important;
@@ -7052,6 +7056,13 @@ svg .mech-blue {
   .java-school__top {
     display: block;
   }
+  .schools__link {
+    margin-right: 30px;
+  }
+  main {
+    margin-top: 10px;
+  }
+
 
 /* Стили для blog-article : */
   .decarticle-list {
@@ -7213,7 +7224,7 @@ svg .mech-blue {
     /* margin-left: 3em !important; */
     font-size: 18px !important;
   }
-  .school__tight-title {
+  .school__right-title {
     font-size: 24px !important;
   }
   .school__right {
