@@ -2440,6 +2440,20 @@ svg .mech-blue {
 .threeOne--hidden {
   opacity: 0
 }
+
+.animate-wrap-405 {
+  position: absolute;
+  left: 40%;
+  top: 130px;
+  margin-left: -150px;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+  z-index: -1
+}
+.threeOne-405--hidden {
+  opacity: 0
+}
 .animate-container {
   position: relative
 }
@@ -2448,6 +2462,11 @@ svg .mech-blue {
 }
 @media screen and (max-width:1024px) {
   .animate-wrap {
+    display: none
+  }
+}
+@media screen and (max-width:1024px) {
+  .animate-wrap-405 {
     display: none
   }
 }
@@ -5494,6 +5513,16 @@ svg .mech-blue {
   font-size: 24px;
 }
 
+.iwill__item-span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.iwill__item-span a:hover {
+  text-decoration: none;
+  color: #e20074;
+}
+
 .iwill__item-small {
   display: block;
   font-size: 18px;
@@ -7419,7 +7448,10 @@ svg .mech-blue {
     display: inline;
   }
   .span-405-margin {
-    margin-right: 0.3em;
+    margin-right: 0;
+  }
+  .warp_anime {
+    display: none !important;
   }
 }
 
