@@ -7488,3 +7488,15 @@ svg .mech-blue {
     font-size: 18px !important;
   }
 }
+
+@media screen and (min-width:1024px) and (max-width:1260px) {
+  .animate-wrap {
+    left: 30%;
+  }
+}
+
+@media screen and (min-width:1261px) {
+  .animate-wrap {
+    left: 35%;
+  }
+}
