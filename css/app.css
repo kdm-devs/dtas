@@ -5432,17 +5432,19 @@ svg .mech-blue {
 
 .container__iwillnotstop-before::before {
   position: absolute;
-  content: '';
-  background-image: url('../img/nonstop/IWILLNOTSTOP-1.png');
-  width: 948px;
+  content: "";
+  background-image: url(../img/nonstop/nonstop-common.svg);
+  max-width: 1440px;
   height: 122px;
   background-repeat: no-repeat;
   z-index: -1;
-  background-position: -30px 0;
+  background-position: 0px 0px;
+  background-size: contain;
+  width: inherit;
 }
 
 
-/* .container__iwillnotstop-after::after {
+/* .container__iwillnotstop-before::after {
   position: absolute;
   content: '';
   background-image: url('../img/nonstop/IWILLNOTSTOP-2.png');
@@ -5561,12 +5563,14 @@ svg .mech-blue {
 .iwill__choose-container::before {
   position: absolute;
   content: '';
-  width: 1440px;
+  width: inherit;
+  max-width: 1440px;
   height: 190px;
-  background-image: url('../img/nonstop/IWILLNOTSTOP-3.png');
+  background-image: url(../img/nonstop/IWILLNOTSTOP-3.png);
   background-repeat: no-repeat;
-  background-position: -24px 0;
+  background-position: 0;
   z-index: -1;
+  background-size: contain;
 }
 
 .iwill-wrap {
@@ -5761,18 +5765,48 @@ svg .mech-blue {
 }
 
 .iwill__inner-container::before {
-  position: absolute;
-  content: '';
+  /* position: absolute;
+  content: ''; */
+
   /* width: 1250px; */
-  width: 1185px;
+
+  /* width: 1185px;
   height: 200px;
   background-image: url('../img/nonstop/non-stop-inner.png');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center top; */
+  
   /* background-size: 1250px 190px; */
-  background-size: 1185px 190px;
+
+  /* background-size: 1185px 190px;
   top: -6em;
-  margin-left: 5em;
+  margin-left: 5em; */
+
+
+
+  /* position: absolute;
+  content: '';
+  width: inherit;
+  max-width: 1440px;
+  height: 190px;
+  background-image: url(../img/nonstop/IWILLNOTSTOP-3.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  z-index: -1;
+  background-size: contain; */
+
+
+  position: absolute;
+    content: '';
+    max-width: 1440px;
+    height: 190px;
+    background-image: url(../img/nonstop/non-stop-inner.png);
+    background-repeat: no-repeat;
+    background-position: 0 3em;
+    background-size: contain;
+    top: -6em;
+    margin-left: 0;
+    width: -webkit-fill-available;
 }
 
 /* Этих изменений нет у Вадима (до example)) */
@@ -6054,10 +6088,7 @@ svg .mech-blue {
 }
 
 .decisions-how-item:nth-child(1) {
-  /* background-image: url('../img/decisions/group-1.jpg'); */
-  /* background-position: 0 0;
-  background-size: 376px 364px; */
-  background-image: url(../img/decisions/group-431.jpg);
+  background-image: url(../img/decisions/group-431.svg);
   background-position: -1px 0;
   background-size: 382px 364px;
 }
@@ -6778,6 +6809,10 @@ svg .mech-blue {
   margin-right: 1em;
 }
 
+.span-405-invisible {
+  display: none;
+}
+
 .text-405 {
   margin: 0 auto;
   margin-bottom: 2em;
@@ -7349,7 +7384,7 @@ svg .mech-blue {
     max-width: 320px !important;
   }
   .join__to-us {
-    margin-top: 11em
+    /* margin-top: 11em */
   }
   .iwill__choose-left-btn {
     width: 80%;
@@ -7376,3 +7411,48 @@ svg .mech-blue {
   }
 }
 
+
+/* Адаптив для 405 : */
+
+@media screen and (max-width:1024px) {
+  .span-405-invisible {
+    display: inline;
+  }
+  .span-405-margin {
+    margin-right: 0.3em;
+  }
+}
+
+@media screen and (min-width:551px) and (max-width:768px) {
+  .span-405 {
+    font-size: 230px;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:550px) {
+  .title-405 {
+    width: max-content;
+    margin: 0 auto;
+    font-size: 26px !important;
+  }
+  .span-405 {
+    font-size: 140px !important;
+  }
+  .text-405 {
+    margin-top: 3em;
+  }
+  .btn-405 {
+    max-width: 310px;
+    margin-top: 1em !important;
+    margin: 0 auto;
+  }
+  .btn-405-grey {
+    margin-bottom: 2em !important;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+  .text-405 {
+    font-size: 18px !important;
+  }
+}
